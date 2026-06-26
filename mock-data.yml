@@ -1,0 +1,19 @@
+settings:
+  display_errors: 'false'
+  content: |
+    Name,Age
+    John,25
+    Jane,30
+  override_locale: ''
+  override_timezone: ''
+  title: ''
+metadata:
+  coordinates:
+  - '37.3861'
+  - '-122.0839'
+  hardware: x86
+  hostname: srly-t6kb0ta1jrd9o0w
+  location: Silicon Valley, USA
+  screen_name: Code Cafe Display
+  tags:
+  - All Screens
