@@ -1,4 +1,8 @@
+[![Version](https://img.shields.io/github/v/release/Screenly/simple-table-app)](https://github.com/Screenly/simple-table-app/releases/latest)
+
 # Screenly Simple Table App
+
+![Simple Table App Preview](/screenshots/1920x1080.webp)
 
 ## Getting Started
 
