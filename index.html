@@ -6,19 +6,33 @@
     <title>Simple Table</title>
     <script src="screenly.js?version=1"></script>
   </head>
-  <body>
+  <body
+    class="text-[#f2f2f3] bg-[url('/static/images/bg.webp')] bg-no-repeat bg-center bg-cover bg-[#08080d] before:content-[''] before:fixed before:inset-0 before:z-[var(--z-index-backdrop)] before:pointer-events-none before:bg-black/45 before:backdrop-blur-[7px]"
+  >
     <auto-scaler
       reference-width="1920"
       reference-height="1080"
       orientation="auto"
+      class="relative z-[var(--z-index-content)]"
     >
-      <div id="app">
-        <app-header class="header" show-date></app-header>
-        <main class="content">
-          <div id="table-wrapper">
-            <h2 id="table-title" hidden></h2>
-            <div class="table-card">
-              <table id="data-table">
+      <div id="app" class="w-full h-full flex flex-col">
+        <app-header class="header shrink-0" show-date></app-header>
+        <main
+          class="flex-1 flex justify-center items-center px-12 py-8 min-h-0 portrait:px-8 portrait:py-6 [@media_(max-width:1280px)_and_(orientation:landscape)]:px-8 [@media_(max-width:1280px)_and_(orientation:landscape)]:py-6"
+        >
+          <div
+            id="table-wrapper"
+            class="w-full max-w-[100rem] flex flex-col gap-5 portrait:max-w-full"
+          >
+            <h2
+              id="table-title"
+              hidden
+              class="text-[2rem] font-semibold text-[#f2f2f3] m-0 tracking-[-0.03em] text-shadow-[0_0.125rem_0.5rem_rgba(0,0,0,0.4)] portrait:text-[1.75rem]"
+            ></h2>
+            <div
+              class="table-card rounded-2xl overflow-hidden bg-white/[0.08] border border-white/[0.12] backdrop-blur-[20px] shadow-[0_1.25rem_3rem_rgba(0,0,0,0.4),0_0.5rem_1rem_rgba(0,0,0,0.2)]"
+            >
+              <table id="data-table" class="w-full border-collapse">
                 <thead id="table-head"></thead>
                 <tbody id="table-body"></tbody>
               </table>
